@@ -9,15 +9,15 @@ import java.util.*;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
-import org.junit.ClassRule;
+import org.junit.Rule;
 import org.junit.Test;
 
 import scala.Tuple2;
 
 public class SimpleSparkTest {
 
-    @ClassRule
-    public static SparkCoreRule sparkRule = new SparkCoreRule();
+    @Rule
+    public SparkCoreRule sparkRule = new SparkCoreRule();
 
     @Test
     public void testSpark() {
